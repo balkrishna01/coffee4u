@@ -26,12 +26,18 @@ def userform(request):
 
 def userdetails(request):
     sum = 0
+    data = {}
     try:
         if request.method == "POST":
             n1 = int(request.POST.get('num1'))
             n2 = int(request.POST.get('num2'))
             sum= n1+n2
+            data = {
+                'n1' : n1,
+                'n2' : n2,
+                'output' : sum
+            }
     except:
         pass
-    return render(request, "userdetails.html", {'output':sum})
+    return render(request, "userdetails.html", data)
 
