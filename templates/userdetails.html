@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- end #header -->
+<!-- end #header-wrapper -->
+<!-- end #logo -->
+<div id="page">
+	<div id="page-bgtop">
+		<div id="page-bgbtm">
+			<div id="content">
+				<div>
+					<p class="meta"><span class="date">Sunday, August 26, 2023</span> 7:27 AM Posted by <a href="#">Krishna</a></p>
+					<h2 class="title"><a href="#">User Form</a></h2>
+                    <form method="post">
+                        {% csrf_token %}
+                        <div>
+                            <label for="">Value1 </label>
+                            <input type="text" name="num1" class="form-control"/>
+                        </div>
+                        <div>
+                            <label for="">Value1 </label>
+                            <input type="text" name="num2" class="form-control"/>
+                        </div>
+                        <div class="pt-4">
+                            <button type="submit">ADD </button>
+                        </div>
+                        <a> Output</a>
+                        <div class="entry">
+                            <input type="text" value="{{output}}"/>
+                        </div>
+                    </form>
+				</div>
+			</div>
+			<div style="clear: both;">&nbsp;</div>
+		</div>
+	</div>
+</div>
+
+{% endblock %}
