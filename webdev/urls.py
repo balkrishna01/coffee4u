@@ -21,7 +21,7 @@ from webdev import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.homePage),
+    path('blog/', views.blog),
     path('about-us/', views.aboutUS),
-    path('course/', views.course),
-    path('course/<courseid>', views.courseDetails),
+    path('contact/', views.contact),
 ]
