@@ -20,8 +20,8 @@ from webdev import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.homePage),
-    path('blog/', views.blog),
-    path('about-us/', views.aboutUS),
-    path('contact/', views.contact),
+    path('', views.homePage, name="home"),
+    path('blog/', views.blog, name="blog"),
+    path('about-us/', views.aboutUS, name="aboutus"),
+    path('contact-us/', views.contact, name="contactus")
 ]

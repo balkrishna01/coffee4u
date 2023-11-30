@@ -11,10 +11,10 @@
 <div id="header">
 	<div id="menu">
 		<ul>
-			<li class="active"><a href="/">Homepage</a></li>
-			<li><a href="/blog/">Blog</a></li>
-			<li><a href="/about-us/">About</a></li>
-			<li><a href="/contact/">Contact</a></li>
+			<li class="active"><a href="{% url 'home' %}">Homepage</a></li>
+			<li><a href="{% url 'blog' %}">Blog</a></li>
+			<li><a href="{% url 'aboutus' %}">About</a></li>
+			<li><a href="{% url 'contactus' %}">Contact</a></li>
 		</ul>
 	</div>
 	<!-- end #menu -->
